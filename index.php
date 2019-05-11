@@ -67,26 +67,29 @@
 
         <!-- CONTENIDO CENTRAL -->
         <div id="central">
-            <div class="product">
+            <h1>Productos destacados</h1>
+
+                <div class="product">
                 <img src="assets/img/camiseta.png" alt="Camiseta GitHub"/>
                 <h2>Camiseta GitHub</h2>
                 <p>30€</p>
-                <a href="">Comprar</a>
-
-                <div class="product">
-                    <img src="assets/img/camiseta.png" alt="Camiseta GitHub"/>
-                    <h2>Camiseta GitHub</h2>
-                    <p>30€</p>
-                    <a href="">Comprar</a>
+                <a href="" class="button">Comprar</a>
                 </div>
 
                 <div class="product">
                     <img src="assets/img/camiseta.png" alt="Camiseta GitHub"/>
                     <h2>Camiseta GitHub</h2>
                     <p>30€</p>
-                    <a href="">Comprar</a>
+                    <a href="" class="button">Comprar</a>
                 </div>
-            </div>
+
+                <div class="product">
+                    <img src="assets/img/camiseta.png" alt="Camiseta GitHub"/>
+                    <h2>Camiseta GitHub</h2>
+                    <p>30€</p>
+                    <a href="" class="button">Comprar</a>
+                </div>
+
         </div>
     </div>
 
