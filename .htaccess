@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+# Esto es para crear urls amigables
+# activo el modulo de php rewrite
+RewriteEngine on
+#creare un controlador de errores 404
+ErrorDocument 404 http://local/P9a/error/
+
+#hago que no muestre las urls si son directorios o ficheros
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>
+
+# cambio servidor linea 6: http://local/P9a/error/
