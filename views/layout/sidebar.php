@@ -25,7 +25,7 @@
             <?php if(isset($_SESSION['admin'])): ?>
                 <!--Le añado base_url para que tome la dirección del enlace desde la raiz-->
                 <li><a href="<?=base_url?>categoria/index">Gestionar categorías</a></li>
-                <li><a href="#">Gestionar productos</a></li>
+                <li><a href="<?=base_url?>producto/gestion">Gestionar productos</a></li>
                 <li><a href="#">Gestionar pedidos</a></li>
             <?php endif; ?>
 
