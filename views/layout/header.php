@@ -11,8 +11,8 @@
     <!-- CABECERA -->
     <header id="header">
         <div id="logo">
-            <img src="<?=base_url?>assets/img/camiseta.png" alt="Camiseta Logo"/>
-            <a href="index_maqueta.php">
+            <img src="<?=base_url?>assets/img/camiseta_empresa.jpg" alt="Camiseta Logo"/>
+            <a href="<?=base_url?>">
                 Tienda de camisetas
             </a>
         </div>
@@ -23,12 +23,12 @@
     <nav id="menu">
         <ul>
             <li>
-                <a href="#">Inicio</a>
+                <a href="<?=base_url?>">Inicio</a>
             </li>
 
             <?php while($cat = $categorias->fetch_object()): ?><!--Recorre y saca objetos de todas las categorías-->
                 <li>
-                    <a href="#"><?=$cat->nombre?></a>
+                    <a href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre?></a>
                 </li>
             <?php endwhile; ?>
         </ul>

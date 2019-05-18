@@ -6,10 +6,21 @@ class productoController{
         $producto = new Producto();
         $productos = $producto->getRandom(6);
 
-
-
         // Renderizar vista
         require_once 'views/producto/destacados.php';
+    }
+
+    public function ver(){
+
+        if(isset($_GET['id'])) {
+            $id = $_GET['id'];
+
+            $producto = new Producto(); //invoco al modelo
+            $producto->setId($id);
+            $product = $producto->getOne(); //saco el producto que me interesa
+
+        }
+        require_once 'views/producto/ver.php';
     }
 
     public function gestion(){
