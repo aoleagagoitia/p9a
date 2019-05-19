@@ -15,7 +15,6 @@
             <a href="" class="button">Comprar</a>
         </div>
     </div>
-
 <?php else: ?>
     <h1>El producto no existe</h1>
 <?php endif; ?>
