@@ -1,5 +1,5 @@
-CREATE DATABASE tienda_master CHARACTER SET 'UTF8' COLLATE 'utf8_spanish_ci';
-USE tienda_master;
+CREATE DATABASE tienda CHARACTER SET 'UTF8' COLLATE 'utf8_spanish_ci';
+USE tienda;
 
 CREATE TABLE usuarios(
     id int(255) auto_increment not null,
